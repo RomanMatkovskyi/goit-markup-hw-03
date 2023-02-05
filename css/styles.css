@@ -126,9 +126,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-color-title);
 }
-.activity-item {
-  text-align: center;
-}
 
 /* --------------Team------------ */
 .team {
@@ -136,7 +133,7 @@ body {
 }
 .team-item {
   background-color: var(--main-color-title);
-  text-align: center;
+
 }
 
 /* --------------Footer------------ */
