@@ -66,6 +66,10 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 /* --------------Header------------ */
 .header {
@@ -182,7 +186,7 @@ body {
 }
 
 .infous {
-  padding-top: 42px;
+  padding-top: 120px;
   display: flex;
   gap: 24px;
 }
@@ -196,16 +200,10 @@ body {
   color: var(--secondary-color-title);
   margin-bottom: 72px;
 }
-.actvt {
-  padding-top: 128px;
-  padding-bottom: 120px;
-}
 
 /* --------------Team------------ */
 .team {
   background-color: var(--secondary-bgc);
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .team-item {
   background-color: var(--main-color-title);
