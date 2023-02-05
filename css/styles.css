@@ -25,7 +25,8 @@ ul {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--main-color-title);
+  /* background-color: var(--main-color-title); */
+  background-color: red;
   color: var(--main-color-text);
 }
 
@@ -35,7 +36,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
 }
 
 .list {
