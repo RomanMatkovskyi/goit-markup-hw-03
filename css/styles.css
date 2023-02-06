@@ -44,6 +44,11 @@ body {
 .link {
   text-decoration: none;
 }
+
+.df {
+  display: flex;
+}
+
 .dspf {
   display: flex;
   gap: 24px;
@@ -65,6 +70,7 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -72,9 +78,8 @@ body {
 
 /* --------------Header------------ */
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
+  border-bottom: 1px solid var(--secondary-color-text);
 }
 .nav {
   display: flex;
@@ -90,6 +95,8 @@ body {
   gap: 40px;
 }
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -105,8 +112,9 @@ body {
 }
 
 .nav-link {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -121,6 +129,9 @@ body {
 }
 
 .contact {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -159,7 +170,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--main-color-title);
   background: var(--btn-color);
-  border: 0 solid transparent;
+  border: none;
   border-radius: 4px;
 }
 .btn:hover,
@@ -184,13 +195,20 @@ body {
   letter-spacing: 0.02em;
 }
 
-.infous {
-  padding-top: 120px;
+
+.infous-list {
   display: flex;
   gap: 24px;
 }
 
+.infous-item{
+  width: calc((100% - 72px) / 4);
+}
+
 /* --------------What are we doing------------ */
+.activity {
+  padding-bottom: 120px;
+}
 .secondary-title {
   font-size: 36px;
   text-align: center;
@@ -200,18 +218,25 @@ body {
   margin-bottom: 72px;
 }
 
+.activity-item {
+  width: calc((100% - 48px) / 3);
+}
 /* --------------Team------------ */
 .team {
   background-color: var(--secondary-bgc);
 }
 .team-item {
+  width: calc((100% - 72px) / 4);
   background-color: var(--main-color-title);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-dscr {
+  padding: 32px 16px;
+}
+
 .team-subtitle {
   margin-bottom: 8px;
-  margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -220,7 +245,6 @@ body {
   text-align: center;
 }
 .team-text {
-  margin-bottom: 32px;
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
@@ -296,9 +320,7 @@ body {
 }
 
 .gallery-card {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border-left: 1px solid var(--secondary-color-text) ;
   border-right: 1px solid var(--secondary-color-text);
   border-bottom: 1px solid var(--secondary-color-text);
